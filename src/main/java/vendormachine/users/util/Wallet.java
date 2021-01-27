@@ -29,7 +29,7 @@ public class Wallet {
         if(retrieve > this.storedCredit){
             //TODO replace 'Sys.out's with Log4j
             System.out.println("Warning: request exceeds value in wallet!");
-            System.out.println("Request: " + retrieve + ",\tstored value: " + retrieve);
+            System.out.println("Request: " + retrieve + ",\tstored value: " + this.storedCredit);
 
             return 0;
         }else {
@@ -38,7 +38,7 @@ public class Wallet {
             return retrieve;
         }
     }
-    
+     
     //===============================
     //===  'get'ors
     //===============================
@@ -47,7 +47,7 @@ public class Wallet {
         return this.storedCredit;
     }
 
-    public String getBrand(String band) {
+    public String getBrand() {
         return this.brand;
     }
 
