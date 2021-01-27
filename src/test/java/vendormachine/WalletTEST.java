@@ -35,7 +35,7 @@ public class WalletTEST {
 		assertEquals("Non-Generic", wallet.getBrand());
 	}
 	@Test
-	public void addCredit() {
+	public void addCredit() { 
 		Wallet wallet = new Wallet();
 		wallet.addCredit(0.5f);
 		System.out.println("Add credit");

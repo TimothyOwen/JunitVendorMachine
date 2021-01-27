@@ -26,9 +26,9 @@ public class DrinkVendingMachine {
     public DrinkVendingMachine(float startCredit, BRANDS brand) {
         this.availableCredit = startCredit;
         this.brandName = brand;
-
+ 
         populateDrinkList();
-    }
+    }  
     
     //===============================
     //===  Methods
@@ -50,7 +50,7 @@ public class DrinkVendingMachine {
                 System.out.println("WARNING: machine credit - £" + this.availableCredit);
                 return null;
             }
-            else {
+            else { 
                 // let's deduct machine credit
                 availableCredit -= selection.cost();
                 return selection;
@@ -72,7 +72,12 @@ public class DrinkVendingMachine {
     //===============================
     //===  'get'ors
     //===============================
-
+    public float getCredit() {
+    	return this.availableCredit; 
+    }
+    public ArrayList<Snack> getDrinkList(){
+    	return this.drinkList; 
+    }
 
     //===============================
     //===  'set'ors

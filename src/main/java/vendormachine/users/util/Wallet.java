@@ -16,9 +16,9 @@ public class Wallet {
         this.brand = brandName;
         this.storedCredit = startCredit; // using f after a decimal value treats it the as a float(rather than a double)
     }
-
+ 
 	//==================
-	//===	Methods
+	//===	Methods 
 	//==================
 
     public void addCredit(float credit){

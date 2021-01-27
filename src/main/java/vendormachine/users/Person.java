@@ -22,7 +22,7 @@ public class Person {
     
     public float getCredit(float retrieve){
     	// if our wallet exists.
-        if(myWallet != null) {
+        if(myWallet != null) { 
         	
         	// If what we are trying to retrieve our money within our limits
         	if(retrieve <= myWallet.getAllCredit()) {
